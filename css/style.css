@@ -8,7 +8,18 @@ body{
     height: 100vh;
     width: 100%;
 }
-
+.negro{
+    background-color: black;
+}
+.blanco{
+    background-color: white;
+}
+.rojo{
+    background-color: red;
+}
+.violeta{
+    background-color: indigo;
+}
 .container{
     height: 100%;
     width: 100%;
@@ -16,11 +27,55 @@ body{
     display: grid;
     place-items: center;
     & .tarjeta{
-        height: 400px;
+        height: 600px;
         width: 50%;
-        background-color: #858585;
+        max-width: 350px;
+        background-color: #acacac;
         border-radius: 20px;
         padding: 10px;
         box-shadow: 10px 10px 10px -5px black;
+        & .header{
+            height: 100px;
+            width: 100%;
+            background-color: #EF5D60;
+            border-radius: 10px 10px 0 0;
+            padding: 10px;
+        }
+        & .precio{
+            height: 200px;
+            width: 100%;
+            background-color: #d3395d;
+            padding: 10px;
+
+            & ul.sel_color{
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                & li{
+                    height: 20px;
+                    width: 20px;
+                    border-radius: 50%;
+                    list-style: none;
+
+                }
+                & li:hover{
+                    transform: scale(1.5);
+                    cursor: pointer;
+                }
+            }
+        }
+        & .desc_product{
+            height: 150px;
+            width: 100%;
+            background-color: #A01A7D;
+            padding: 10px;
+        }
+        & .bottom{
+            height: 130px;
+            width: 100%;
+            background-color: #311847;
+            padding: 10px;
+            border-radius: 0 0 10px 10px;
+        }
     }
 }
