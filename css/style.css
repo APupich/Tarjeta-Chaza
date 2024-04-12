@@ -51,7 +51,7 @@ body{
                 left: 0;
                 top: 0;
                 z-index: 0;
-                opacity: 0.7;
+                opacity: 0.5;
             }
             & .iconos{
                 color: #1f1f1f;
